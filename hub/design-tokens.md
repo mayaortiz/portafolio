@@ -1,4 +1,4 @@
-Tipografía: https://rsms.me/inter/inter.css (Inter)
+Tipografía: TBD 
 
 Iconos: https://fonts.google.com/icons
 

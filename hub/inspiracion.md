@@ -1,5 +1,4 @@
 Portafolios de inspiración:
 
-https://ndo.dev
-https://www.kennytye.com
-https://www.miriamsuzanne.com
+https://www.olivierguy.com/
+https://www.awwwards.com/sites/buro-jantzen
