@@ -76,3 +76,56 @@ body {
   background-color: var(--white);
   color: var(--black);
 }
+
+/* Home */
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 80px;
+  border: 2px solid black;
+  /* background: black; */
+  margin: auto;
+  /* width: 120px;
+  height: 120px; */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.img1 {
+  border: 2px solid rgb(226, 43, 101);
+
+  width: 120px;
+  height: 120px;
+}
+.img2 {
+  border: 2px solid blueviolet;
+
+  width: 120px;
+  height: 120px;
+}
+
+.img3 {
+  border: 2px solid blue;
+
+  width: 120px;
+  height: 120px;
+}
+
+.img4 {
+  border: 2px solid royalblue;
+
+  width: 120px;
+  height: 120px;
+}
+.img5 {
+  border: 2px solid rgb(65, 225, 113);
+
+  width: 120px;
+  height: 120px;
+  margin-top: auto;
+}
