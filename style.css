@@ -1,8 +1,13 @@
 /* Imports - Tipografía */
-@font-face {
+/* @font-face {
   font-family: "Salvaje";
   src: url("https: //res.cloudinary.com/mayuki/raw/upload/v1652470670/tipografia/Salvaje_Display_Regular_uqvkhn.woff"),
     format("woff");
+} */
+/* Imports - Tipografía */
+@font-face {
+  font-family: "Salvaje";
+  src: url(./fonts/SalvajeDisplay-Regular.woff);
 }
 
 /* Reset */
