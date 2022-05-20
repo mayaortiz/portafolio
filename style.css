@@ -1,4 +1,10 @@
 /* Imports - Tipografía */
+@font-face {
+  font-family: "Salvaje";
+  src: url("https: //res.cloudinary.com/mayuki/raw/upload/v1652470670/tipografia/Salvaje_Display_Regular_uqvkhn.woff"),
+    format("woff");
+}
+
 /* Reset */
 *,
 *::before,
@@ -39,6 +45,7 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -59,7 +66,9 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-sans: "Inter var", sans-serif;
+  --font-family-salvaje: "Salvaje";
+  --font-headings: "Salvaje";
+  font-family: "Salvaje";
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -76,18 +85,29 @@ picture {
 
 /* Base */
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-family-salvaje);
   background-color: var(--white);
   color: var(--black);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
 /* Home */
 .home {
+  font-family: var(--font-family-salvaje);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
+
 }
 
 .enlace1 {
@@ -105,44 +125,68 @@ body {
 
 .logo {
   font-size: 80px;
-  border: 2px solid black;
   /* background: black; */
   margin: auto;
   /* width: 120px;
   height: 120px; */
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-column: 3/ 3;
+  grid-row: 3 / 2;
 }
 
+/* tortillas */
 .img1 {
   transition: all 300ms ease-in-out;
+  grid-column: 2/ 3;
+  grid-row: 2 / 2;
 }
 
 .img1:hover {
   opacity: 0.5;
 }
+
+/* chucho */
 .img2 {
-  border: 2px solid blueviolet;
-
-  width: 120px;
+  width: auto;
   height: 120px;
+  grid-column: 2/3;
+  grid-row: 1 / 2;
 }
 
+/* roja */
 .img3 {
-  border: 2px solid blue;
 
   width: 120px;
-  height: 120px;
+  height: auto;
+  grid-column: 1/2;
+  grid-row: 2 /3;
 }
 
+/* tostada */
 .img4 {
-  grid-column: 3 / 4;
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+}
+
+/* hierbas */
+.img5 {
+
+  width: 120px;
+  height: auto;
+  margin-top: auto;
+  grid-column: 2/3;
   grid-row: 3 /4;
 }
-.img5 {
-  border: 2px solid rgb(65, 225, 113);
 
-  width: 120px;
+/* bolsa */
+.img6 {
+  grid-column: 1/2;
+  grid-row: 3 /4;
+  width: auto;
   height: 120px;
-  margin-top: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
