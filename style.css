@@ -1,13 +1,14 @@
-/* Imports - Tipografía */
-/* @font-face {
-  font-family: "Salvaje";
-  src: url("https: //res.cloudinary.com/mayuki/raw/upload/v1652470670/tipografia/Salvaje_Display_Regular_uqvkhn.woff"),
-    format("woff");
-} */
-/* Imports - Tipografía */
-@font-face {
-  font-family: "Salvaje";
-  src: url(./fonts/SalvajeDisplay-Regular.woff);
+/*Tipografía*/
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 /* Reset */
@@ -57,141 +58,119 @@ picture {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behaviour: auto !important;
+    scroll-behavior: auto !important;
   }
 }
 
-.active {
-  font-weight: bold;
-}
-
-/* Variables */
-:root {
-  /* 1. Colores */
-  --black: #000000;
-  --white: #ffffff;
-  /* 2. Tipografía */
-  --font-family-salvaje: "Salvaje";
-  --font-headings: "Salvaje";
-  font-family: "Salvaje";
-  --font-size-1: 1rem;
-  --font-size-2: 1.1rem;
-  --font-size-3: 1.25rem;
-  --font-size-4: 1.5rem;
-  --font-size-5: 2rem;
-  --font-size-6: 2.5rem;
-  --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
-  --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-  --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
-  /* 3. Layouts */
-  --size-mobile: 414px;
-  --size-desktop: 1440px;
-}
-
-/* Base */
-body {
-  font-family: var(--font-family-salvaje);
-  background-color: var(--white);
-  color: var(--black);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-headings);
-}
-
-/* Home */
-.home {
-  font-family: var(--font-family-salvaje);
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 100vh;
-
-}
-
-.enlace1 {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 20px;
+/* inicio */
+a {
+  color: black;
   text-decoration: none;
-  color: inherit;
 }
 
-.enlace1:hover {
-  opacity: 0.5;
+a:hover {
+  color: rgb(176, 23, 23);
+  text-decoration: underline;
 }
 
-.logo {
-  font-size: 80px;
-  /* background: black; */
-  margin: auto;
-  /* width: 120px;
-  height: 120px; */
-  grid-column: 3/ 3;
-  grid-row: 3 / 2;
-}
-
-/* tortillas */
-.img1 {
-  transition: all 300ms ease-in-out;
-  grid-column: 2/ 3;
-  grid-row: 2 / 2;
-}
-
-.img1:hover {
-  opacity: 0.5;
-}
-
-/* chucho */
-.img2 {
-  width: auto;
-  height: 120px;
-  grid-column: 2/3;
-  grid-row: 1 / 2;
-}
-
-/* roja */
-.img3 {
-
-  width: 120px;
-  height: auto;
-  grid-column: 1/2;
-  grid-row: 2 /3;
-}
-
-/* tostada */
-.img4 {
-  grid-column: 1 / 2;
-  grid-row: 1 /2;
-}
-
-/* hierbas */
-.img5 {
-
-  width: 120px;
-  height: auto;
-  margin-top: auto;
-  grid-column: 2/3;
-  grid-row: 3 /4;
-}
-
-/* bolsa */
-.img6 {
-  grid-column: 1/2;
-  grid-row: 3 /4;
-  width: auto;
-  height: 120px;
-}
 
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.gridinicio {
+  display: grid;
+  height: auto;
+}
+
+.gridproyectos {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proyecto img {
+  object-fit: cover;
+
+}
+
+.unionsuave p {
+  display: none;
+}
+
+.unionsuave:hover p {
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.bandidas p {
+  display: none;
+}
+
+.bandidas:hover p {
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.tortillas p {
+  display: none;
+}
+
+.tortillas:hover p {
+  display: inherit;
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  background-color: azure;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.monton p {
+  display: none;
+}
+
+.monton:hover p {
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  background-color: azure;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.fermenta p {
+  display: none;
+}
+
+.fermenta:hover p {
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.chucho p {
+  display: none;
+}
+
+.chucho:hover p {
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  text-decoration: underline;
 }
