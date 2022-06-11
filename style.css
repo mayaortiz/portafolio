@@ -32,8 +32,15 @@ picture {
 
 body {
   line-height: 1.5;
-  min-height: 100vh;
+  font-size: clamp(0.3rem, 2vw + 1rem, 0.95rem);
+  /* height: 100vh; */
 }
+
+/* @media screen and (min-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+} */
 
 ul {
   margin: 0;
@@ -69,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: rgb(176, 23, 23);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 
@@ -79,6 +86,7 @@ a:hover {
   justify-content: space-between;
   margin-top: 10px;
   padding: 10px;
+
 }
 
 .gridinicio {
@@ -88,8 +96,35 @@ a:hover {
 
 .gridproyectos {
   display: grid;
+  gap: 20px;
+  height: 120vh;
+  grid-template-columns: 1fr;
+}
+
+.gridproyectos div img {
   height: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Todo esto es en desktop */
+@media screen and (min-width: 600px) {
+  .gridproyectos {
+    display: grid;
+    gap: 0;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gridproyectos.inicio div {
+    max-height: 300px;
+  }
+
+  .gridproyectos.inicio div img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .proyecto img {
@@ -103,10 +138,13 @@ a:hover {
 
 .unionsuave:hover p {
   display: inherit;
+  display: inherit;
   display: grid;
   position: absolute;
   justify-content: center;
-  text-decoration: underline;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .bandidas p {
@@ -115,10 +153,13 @@ a:hover {
 
 .bandidas:hover p {
   display: inherit;
+  display: inherit;
   display: grid;
   position: absolute;
   justify-content: center;
-  text-decoration: underline;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .tortillas p {
@@ -131,9 +172,9 @@ a:hover {
   display: grid;
   position: absolute;
   justify-content: center;
-  background-color: azure;
+  background-color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .monton p {
@@ -145,9 +186,9 @@ a:hover {
   display: grid;
   position: absolute;
   justify-content: center;
-  background-color: azure;
+  background-color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -157,20 +198,54 @@ a:hover {
 
 .fermenta:hover p {
   display: inherit;
-  display: grid;
-  position: absolute;
-  justify-content: center;
-  text-decoration: underline;
-}
-
-.chucho p {
-  display: none;
-}
-
-.chucho:hover p {
   display: inherit;
   display: grid;
   position: absolute;
   justify-content: center;
-  text-decoration: underline;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.cuerpoagua p {
+  display: none;
+}
+
+.cuerpoagua:hover p {
+  display: inherit;
+  display: inherit;
+  display: grid;
+  position: absolute;
+  justify-content: center;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*cuerpodeagua*/
+
+
+/*contacto*/
+.textoproyecto {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.textocontacto {
+  padding: 20px;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.noscroll .gridinicio img {
+  object-fit: cover;
+}
+
+.gridproyectos {
+
+  height: 100vh;
+  place-content: center;
 }
